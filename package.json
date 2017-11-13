@@ -4,6 +4,8 @@
   "private": true,
   "dependencies": {
     "firebase": "^4.6.2",
+    "gh-pages": "^1.0.0",
+    "homepage": "https://matheusdmd.github.io/MatthewEffect",
     "material-ui": "^0.19.2",
     "materialize-css": "^0.100.2",
     "react": "^15.6.1",
@@ -19,6 +21,11 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "devDependencies": {
+    "webpack": "^2.7.0"
   }
 }
